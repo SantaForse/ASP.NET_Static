@@ -1,12 +1,18 @@
 .showcase {
     background-color: $color-theme-3;
-    padding: 60px 0;
+    padding: 60px 0px;
+
 
     @include lg {
+        padding: 0px 0 40px 0;
+    }
+
+    @include xl {
         padding: 0px 0 60px 0;
     }
 
     .container {
+        padding-top: 80px;
         display: block;
         text-align: center;
 
@@ -38,13 +44,17 @@
             margin-bottom: 20px;
         }
         .title {
-            font-size: 40px;
+            font-size: 50px;
             font-weight: $font-weight-bold;
             line-height: 1.2;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
 
             @include lg {
-                font-size: 60px;
+                margin-bottom: 30px;
+            }
+
+            @include xl {
+                font-size: 65px;
                 margin-bottom: 50px;
             }
         }

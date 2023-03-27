@@ -1,13 +1,14 @@
 .top-selling {
-    .container-fluid {
-        padding-left: 4rem;
-        padding-right: 4rem;
-    }
+    padding: 40px 20px;
 
     .collection-title {
+        text-align: center;
+        font-family: $font-poppins;
+        font-weight: $font-weight-semibold;
         font-size: 30px;
+        color: $color-dark-2;
     }
-    
+
     .collection-grid {
         margin-top: 40px;
         display: grid;
@@ -26,34 +27,9 @@
 
         .collection-item {
             .body {
-                display: flex;
-                justify-content: space-between;
-                align-items: end;
-                color: $color-dark-2;
-                margin-top: 10px;
-                font-family: $font-poppins;
-                padding: 0 10px 10px 10px;
-        
-                .info {
-                    padding: 2px;
-        
-                    .title {
-                        font-size: 16px;
-                        font-weight: $font-weight-medium;
-                    }
-                    .price {
-                        font-size: 12px;
-                    }
-                }
-        
-                .tocart {
-                    padding: 2px;
-                    font-size: 12px;
-                    color: $color-dark-2;
-        
-                    &:hover {
-                        color: $color-dark-4;
-                    }
+                .title {
+                    font-size: 14px;
+                    font-weight: $font-weight-medium;
                 }
             }
         }
@@ -62,9 +38,5 @@
     .load-more {
         margin-top: 40px;
         text-align: center;
-
-        button {
-            padding: 5px 10px;
-        }
     }
 }

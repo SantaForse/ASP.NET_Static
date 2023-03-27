@@ -1,19 +1,18 @@
 try {
-
-    
-    const toggleButton = document.querySelector('[data-option="toggle"]')
-    const target = toggleButton.getAttribute('data-target')
-    toggleButton.addEventListener('click', toggleTarget)
-
-    function toggleTarget() {
-        console.log('test')
+    const toggleBtn = document.querySelector('[data-option="toggle"]')
+    toggleBtn.addEventListener('click', function() {
+        const element = document.querySelector(toggleBtn.getAttribute('data-target'))
         
-        const element = document.querySelector(target)
-
-        if (!element.classList.contains('hide')) {
-            element.classList.add('hide')
-        } else {
-            element.classList.remove('hide')
+        if (!element.classList.contains('open-menu')) {
+            element.classList.add('open-menu')
+            toggleBtn.classList.add('btn-outline-dark')
+            toggleBtn.classList.add('btn-toggle-white')
         }
-    }
+
+        else {
+            element.classList.remove('open-menu')
+            toggleBtn.classList.remove('btn-outline-dark')
+            toggleBtn.classList.remove('btn-toggle-white')
+        }
+    })    
 } catch {}
